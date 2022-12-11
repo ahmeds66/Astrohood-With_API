@@ -1,0 +1,61 @@
+<div style="background-color:#11171a;">
+    <br>
+    <div class="container " style="max-width:50rem;align-self: center">
+    <form class="card text-white bg-black mb-4" style="align-items: center">
+        <h1>UPDATE ROCKET 🚀</h1> 
+        <br>
+        <div class="col-sm-2 col-md-2 col-lg-9">
+            <label >ID Rocket</label> 
+            <input readonly type="text" [(ngModel)]="currentRocket.idRocket" name="idRocket" class="form-control">
+        </div> 
+        <br>
+        <div class="col-sm-2 col-md-2 col-lg-9">
+            <label >Rocket Name</label> 
+            <input type="text" [(ngModel)]="currentRocket.name" name="rocketName" class="form-control">
+        </div>
+        <br>
+        <!--
+        <div class="col-sm-2 col-md-2 col-lg-9">
+            <label >Constractor</label> 
+            <select class="form-control form-control-lg" id="idConst" name="idConst" [(ngModel)]="updateConstId" >
+                <option *ngFor="let c of constractor" [ngValue]="c.idC">{{c.nameC}}</option>
+            </select>
+        </div>
+        -->
+        <div class="col-sm-2 col-md-2 col-lg-9">
+            <label >Constractor</label> 
+            <input type="text" [(ngModel)]="currentRocket.constractor" name="constractor" class="form-control">
+        </div>
+        <br>
+        <div class="col-sm-2 col-md-2 col-lg-9">
+            <label >low orbit payload</label> 
+            <input type="text" [(ngModel)]="currentRocket.lowOrbitPayload" name="lowOrbitPayload" class="form-control">
+        </div>
+        <br>
+        <div class="col-sm-2 col-md-2 col-lg-9">
+            <label >high orbit payload</label> 
+            <input type="text" [(ngModel)]="currentRocket.highOrbitPayload" name="highOrbitPayload" class="form-control">
+        </div>
+        <br>
+        <div class="col-sm-2 col-md-2 col-lg-9">
+            <label >Date Of launch</label> 
+            <input type="date" [(ngModel)]="currentRocket.launchDate" name="dateOfLaunch" class="form-control">
+        </div>
+        <br>
+        <div class="col-sm-2 col-md-2 col-lg-9">
+            <label >Number of launchs</label> 
+            <input type="text" [(ngModel)]="currentRocket.nbLaunches" name="numberOfLaunchs" class="form-control">
+        </div>
+        <br>
+        <div class="col-sm-2 col-md-2 col-lg-9">
+            <label >Fails</label> 
+            <input type="text" [(ngModel)]="currentRocket.fails" name="fails" class="form-control">
+        </div>
+        <br>
+        <div class="mt-2">
+            <button type="submit" class="btn btn-primary" (click)="updateRocket()">update Rocket</button>
+        </div>
+        <br>
+    </form> 
+    <br>  
+</div>
